@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+*.whl
+dist/
+build/
+sdist/
+*.tar.gz
+*.spec
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+.python-version
+
+# uv
+.uv/
+
+# Wine (Windows cross-build)
+wineprefix/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# mypy
+.mypy_cache/

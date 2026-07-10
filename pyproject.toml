@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdn2ora"
+version = "0.1.0"
+description = "Convert Paint.NET (.pdn) files to OpenRaster (.ora) format"
+readme = "README.md"
+license = {text = "AGPL-3.0-only"}
+requires-python = ">=3.9"
+keywords = ["pdn", "paintdotnet", "openraster", "ora", "krita", "image", "converter"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+]
+dependencies = [
+    "pypdn>=1.0.0",
+    "pyora>=0.3.0",
+    "Pillow>=9.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+build = [
+    "pyinstaller>=6.21.0",
+]
+
+[project.scripts]
+pdn2ora = "pdn2ora.cli:main"
+
+[project.urls]
+Homepage = "https://codeberg.org/marvin1099/pdn2ora"
+Repository = "https://codeberg.org/marvin1099/pdn2ora"
+Mirror = "https://github.com/marvin1099/pdn2ora"
+Issues = "https://codeberg.org/marvin1099/pdn2ora/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
