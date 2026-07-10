@@ -23,7 +23,25 @@ pipx install .
 pip install --user .
 ```
 
-**Binary downloads:** Get pre-compiled binaries from the [releases](https://codeberg.org/marvin1099/pdn2ora/releases) page, or build your own with `./build.sh linux` / `./build.sh windows`.
+## Binary downloads
+Instead of installing from source, get pre-compiled binaries from the [releases](https://codeberg.org/marvin1099/pdn2ora/releases) page,
+or build binaries using
+
+```bash
+./build.sh linux     # Linux binary → dist/pdn2ora-linux-x64
+./build.sh windows   # Windows binary via Wine → dist/pdn2ora-win-x64.exe
+./build.sh all       # both
+```
+
+## Development
+
+```bash
+git clone https://codeberg.org/marvin1099/pdn2ora.git
+cd pdn2ora
+./build.sh setup     # install all deps
+./build.sh test      # run tests
+./build.sh lint      # check code style
+```
 
 ## Usage
 
@@ -37,7 +55,7 @@ pdn2ora [options] FILE_OR_DIR [FILE_OR_DIR ...]
 pdn2ora input.pdn                       # single file
 pdn2ora ./artwork/ -r -D ./output/      # recursive batch to output dir
 pdn2ora input.pdn --info                # show layer info
-pdn2ora *.pdn -r -d -y                  # convert and delete sources
+pdn2ora *.pdn -d -y                     # convert and delete sources
 ```
 
 ### Options
@@ -65,21 +83,4 @@ pdn2ora *.pdn -r -d -y                  # convert and delete sources
 | `-V, --version` | Show version |
 | `-h, --help` | Show help |
 
-## Development
-
-```bash
-git clone https://codeberg.org/marvin1099/pdn2ora.git
-cd pdn2ora
-./build.sh setup     # install all deps
-./build.sh test      # run tests
-./build.sh lint      # check code style
-```
-
-### Building binaries
-
-```bash
-./build.sh linux     # Linux binary → dist/pdn2ora-linux-x64
-./build.sh windows   # Windows binary via Wine → dist/pdn2ora-win-x64.exe
-./build.sh all       # both
-```
 
