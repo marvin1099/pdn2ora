@@ -132,10 +132,8 @@ def convert_pdn_to_ora(
 
     project = Project.new(doc.width, doc.height)
 
-    # PDN stores layers top-to-bottom; ORA stores bottom-to-top.
-    # Iterate in reverse so the bottom-most PDN layer becomes the
-    # bottom-most ORA layer.
-    for idx, layer in enumerate(reversed(doc.layers)):
+    # Both PDN and ORA list layers top-to-bottom, so iterate in order.
+    for idx, layer in enumerate(doc.layers):
         ora_name = layer.name or f"Layer {idx}"
 
         # pypdn gives us a numpy RGBA uint8 array → convert to PIL Image

@@ -21,6 +21,7 @@ ENV/
 
 # uv
 .uv/
+uv.lock
 
 # Wine (Windows cross-build)
 wineprefix/
@@ -44,6 +45,9 @@ desktop.ini
 .coverage
 htmlcov/
 .ruff_cache/
+
+# Generated output
+*.ora
 
 # mypy
 .mypy_cache/
