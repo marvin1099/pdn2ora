@@ -1,6 +1,8 @@
 # pdn2ora
 
-This cross-platform CLI tool converts Paint.NET (.pdn) files to OpenRaster (.ora) format, preserving all layer properties, blend modes, opacity, and visibility. Paint.NET's native format is proprietary; this opens up your artwork for use in Krita, GIMP, and other open-source editors. Supports recursive batch conversion, dry-run previews, post-conversion validation, and standalone binaries for Linux and Windows.
+This cross-platform CLI tool converts Paint.NET (.pdn) files to OpenRaster (.ora) format, preserving all layer properties, blend modes, opacity, and visibility.  
+Paint.NET's native format is proprietary; this opens up your artwork for use in Krita, GIMP, and other open-source editors.  
+Supports recursive batch conversion, dry-run previews, post-conversion validation, and standalone binaries for Linux and Windows.
 
 - **Codeberg** (main): https://codeberg.org/marvin1099/pdn2ora
 - **GitHub** (mirror): https://github.com/marvin1099/pdn2ora

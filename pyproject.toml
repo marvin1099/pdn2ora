@@ -49,8 +49,8 @@ Repository = "https://codeberg.org/marvin1099/pdn2ora"
 Mirror = "https://github.com/marvin1099/pdn2ora"
 Issues = "https://codeberg.org/marvin1099/pdn2ora/issues"
 
-[tool.setuptools.packages.find]
-where = ["."]
+[tool.setuptools]
+packages = ["pdn2ora"]
 
 [tool.ruff]
 line-length = 100
