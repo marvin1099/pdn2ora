@@ -23,6 +23,8 @@ pipx install .
 pip install --user .
 ```
 
+**Binary downloads:** Get pre-compiled binaries from the [releases](https://codeberg.org/marvin1099/pdn2ora/releases) page, or build your own with `./build.sh linux` / `./build.sh windows`.
+
 ## Usage
 
 ```bash
@@ -73,16 +75,11 @@ cd pdn2ora
 ./build.sh lint      # check code style
 ```
 
-## Building binaries
+### Building binaries
 
 ```bash
-./build.sh linux      # Linux binary → dist/pdn2ora-linux-x64
-./build.sh windows    # Windows binary via Wine → dist/pdn2ora-win-x64.exe
-./build.sh all        # both
+./build.sh linux     # Linux binary → dist/pdn2ora-linux-x64
+./build.sh windows   # Windows binary via Wine → dist/pdn2ora-win-x64.exe
+./build.sh all       # both
 ```
-
-Windows builds use Wine to run PyInstaller with a Windows Python installation.
-The Wine prefix is set up automatically on first build.
-
-Pre-built binaries are available on the [releases](https://codeberg.org/marvin1099/pdn2ora/releases) page.
 
