@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pdn2ora"
-version = "0.1.0"
+version = "0.1.1"
 description = "Convert Paint.NET (.pdn) files to OpenRaster (.ora) format"
 readme = "README.md"
 license = "AGPL-3.0-only"

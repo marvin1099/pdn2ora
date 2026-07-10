@@ -6,8 +6,22 @@ Supports recursive batch conversion, dry-run previews, post-conversion validatio
 
 - **Codeberg** (main): https://codeberg.org/marvin1099/pdn2ora
 - **GitHub** (mirror): https://github.com/marvin1099/pdn2ora
+- **PyPI**: https://pypi.org/project/pdn2ora/
 
 ## Install
+
+```bash
+# With uv (recommended)
+uv tool install pdn2ora
+
+# Or with pipx
+pipx install pdn2ora
+
+# Or with pip
+pip install --user pdn2ora
+```
+
+Or install from git:
 
 ```bash
 git clone https://codeberg.org/marvin1099/pdn2ora.git
@@ -28,6 +42,10 @@ Instead of installing from source, get pre-compiled binaries from the [releases]
 or build binaries using
 
 ```bash
+# if not cloned yet
+git clone https://codeberg.org/marvin1099/pdn2ora.git
+cd pdn2ora
+
 ./build.sh linux     # Linux binary → dist/pdn2ora-linux-x64
 ./build.sh windows   # Windows binary via Wine → dist/pdn2ora-win-x64.exe
 ./build.sh all       # both
@@ -36,8 +54,10 @@ or build binaries using
 ## Development
 
 ```bash
+# if not cloned yet
 git clone https://codeberg.org/marvin1099/pdn2ora.git
 cd pdn2ora
+
 ./build.sh setup     # install all deps
 ./build.sh test      # run tests
 ./build.sh lint      # check code style
