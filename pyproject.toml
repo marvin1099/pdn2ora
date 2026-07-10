@@ -7,14 +7,13 @@ name = "pdn2ora"
 version = "0.1.0"
 description = "Convert Paint.NET (.pdn) files to OpenRaster (.ora) format"
 readme = "README.md"
-license = {text = "AGPL-3.0-only"}
+license = "AGPL-3.0-only"
 requires-python = ">=3.9"
-keywords = ["pdn", "paintdotnet", "openraster", "ora", "krita", "image", "converter"]
+keywords = ["pdn", "paintdotnet", "paint-dot-net", "openraster", "ora", "krita", "gimp", "image", "converter", "cli", "batch", "cross-platform", "layer-preserving"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Console",
     "Intended Audience :: End Users/Desktop",
-    "License :: OSI Approved :: GNU Affero General Public License v3",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
